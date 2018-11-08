@@ -1,0 +1,23 @@
+{
+  "name": "orange-koa-template",
+  "version": "1.0.0",
+  "description": "koa template",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dachengzi-box/orange-koa-template.git"
+  },
+  "keywords": [
+    "koa",
+    "template"
+  ],
+  "author": "wenzhui5@163.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dachengzi-box/orange-koa-template/issues"
+  },
+  "homepage": "https://github.com/dachengzi-box/orange-koa-template#readme"
+}
