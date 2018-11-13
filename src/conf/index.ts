@@ -24,20 +24,20 @@ const conf = convict({
         default: 4000,
         env: 'PORT',
     },
-});
-const d = debug('kickstarter:conf');
-const env = conf.get('env');
+})
+const d = debug('kickstarter:conf')
+const env = conf.get('env')
 try {
-    const path = `${__dirname}/${env}.json`;
+    const path = `${__dirname}/${env}.json`
 
-    d('trying to access %s', path);
-    fs.accessSync(path, fs.constants.F_OK);
+    d('trying to access %s', path)
+    fs.accessSync(path, fs.constants.F_OK)
 
-    conf.loadFile(path);
+    conf.loadFile(path)
 } catch (error) {
-    d('file doesn\'t exist, loading defaults');
+    d('file doesn\'t exist, loading defaults')
 }
 
-conf.validate({ allowed: 'strict' });
+conf.validate({ allowed: 'strict' })
 
-export default conf;
+export default conf
